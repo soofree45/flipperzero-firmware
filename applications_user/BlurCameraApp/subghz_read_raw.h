@@ -1,7 +1,7 @@
 #pragma once
 
 #include <gui/view.h>
-#include "../helpers/subghz/subghz_types.h"  // Update the include path
+#include "../lib/helpers/subghz/subghz_types.h"  // Update the include path
 #include "../helpers/subghz_custom_event.h"
 
 #define SUBGHZ_RAW_THRESHOLD_MIN -90.0f

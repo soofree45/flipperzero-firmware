@@ -1,7 +1,7 @@
 #pragma once
 
 #include <gui/view.h>
-#include "../helpers/subghz/subghz_types.h"  // Update the include path
+#include "../lib/helpers/subghz/subghz_types.h"  // Update the include path
 #include "../helpers/subghz_custom_event.h"
 
 typedef struct SubGhzViewTransmitter SubGhzViewTransmitter;
