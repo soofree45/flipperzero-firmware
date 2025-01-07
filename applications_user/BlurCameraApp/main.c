@@ -19,7 +19,8 @@ void init_radio(uint32_t frequency) {
     // Transmit the signal
     furi_hal_subghz_protocol_encoder_base_start_encode(encoder);
 
-    furi_record_close("subghz");
+    furi_hal_subghz_protocol_encoder_base_free(encoder);
+    furi_record_close(subghz);
 }
 
 // Main entry point for the app
