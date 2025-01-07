@@ -1,6 +1,6 @@
 #include "furi.h"
 // Update the include path to the correct location of subghz.h
-#include "../lib/subghz/subghz.h"
+#include "../../lib/subghz/subghz.h"
 #include "gui/gui.h"
 #include "furi_hal_subghz.h"
 #include "furi_hal_subghz_protocol.h"
