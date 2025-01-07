@@ -1,0 +1,17 @@
+# For details & more options, see documentation/AppManifests.md in firmware repo
+
+App(
+    appid="blur_camera_app",  # Must be unique
+    name="App blur_camera_app",  # Displayed in menus
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="blur_camera_app",  # Corrected entry point function name
+    stack_size=2 * 1024,
+    fap_category="Examples",
+    # Optional values
+    # fap_version="0.1",
+    fap_icon="blur_camera_app.png",  # 10x10 1-bit PNG
+    # fap_description="A simple app",
+    # fap_author="J. Doe",
+    # fap_weburl="https://github.com/user/blur_camera_app",
+    fap_icon_assets="images",  # Image assets to compile for this application
+)

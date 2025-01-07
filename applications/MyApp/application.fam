@@ -1,0 +1,12 @@
+App(
+    appid="myapp",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="ap17",
+    name="MyApp",
+    stack_size=4096,
+    requires=[
+        "system",
+        "gui"
+    ],
+    order=50
+)

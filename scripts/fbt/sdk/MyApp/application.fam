@@ -1,0 +1,6 @@
+manifest:
+  name: MyApp
+  version: 1.0.0
+  author: Jay
+  description: A simple app for Flipper Zero
+  entry_point: ap17

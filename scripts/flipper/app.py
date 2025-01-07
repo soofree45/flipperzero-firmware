@@ -1,7 +1,7 @@
 import logging
 import argparse
 import sys
-import colorlog
+import colorlog # type: ignore
 
 
 class App:
