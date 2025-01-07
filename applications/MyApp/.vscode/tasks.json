@@ -7,6 +7,8 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
+                "-I",  // Add include path
+                "${workspaceFolder}\\include",  // Path to the directory containing header files
                 "*.c",  // Compile all C files in the directory
                 "-o",
                 "${workspaceFolder}\\MyApp.exe"  // Output executable in the workspace folder

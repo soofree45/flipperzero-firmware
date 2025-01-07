@@ -1,20 +1,23 @@
 #include "furi.h"
-#include "subghz_i.h"
-#include <stdio.h> "gui/gui.h"
+// Update the include path to the correct location of subghz.h
+#include "../subghz/subghz.h"
+#include "gui/gui.h"
+#include "furi_hal_subghz.h"
+#include "furi_hal_subghz_protocol.h"
 
 // Function to initialize and configure the radio module
 void init_radio(uint32_t frequency) {
-    SubGhz* subghz = furi_record_open("subghz");
-    SubGhzProtocolEncoderBase* encoder = subghz_encoder_base_alloc(subghz->txrx);
+    FuriHalSubGhz* subghz = furi_record_open("subghz");
+    FuriHalSubGhzProtocolEncoderBase* encoder = furi_hal_subghz_protocol_encoder_base_alloc(subghz->txrx);
 
     // Set frequency (example: 40 MHz for analog cameras)
-    SubGhzProtocolEncoderBaseSetFrequency(encoder, frequency);
+    furi_hal_subghz_protocol_encoder_base_set_frequency(encoder, frequency);
 
     // Configure modulation (e.g., OOK)
-    SubGhzProtocolEncoderBaseSetProtocolType(encoder, SubGhzProtocolTypeOok);
+    furi_hal_subghz_protocol_encoder_base_set_protocol_type(encoder, FuriHalSubGhzProtocolTypeOok);
 
     // Transmit the signal
-    subghz_encoder_base_start_encode(subghz->txrx);
+    furi_hal_subghz_protocol_encoder_base_start_encode(encoder);
 
     furi_record_close("subghz");
 }
