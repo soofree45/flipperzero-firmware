@@ -2,7 +2,7 @@
 
 #include <gui/view.h>
 #include "../lib/helpers/subghz/subghz_types.h"  // Update the include path
-#include "../helpers/subghz_custom_event.h"
+#include "../lib/helpers/subghz/subghz_custom_event.h"  // Update the include path
 
 #define SUBGHZ_RAW_THRESHOLD_MIN -90.0f
 
