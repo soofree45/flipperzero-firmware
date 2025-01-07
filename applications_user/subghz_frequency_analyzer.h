@@ -1,7 +1,7 @@
 #pragma once
 
 #include <gui/view.h>
-#include "../helpers/subghz_custom_event.h"
+#include "../../lib/subghz/subghz_custom_event.h"  // Update the include path
 
 typedef struct SubGhzFrequencyAnalyzer SubGhzFrequencyAnalyzer;
 

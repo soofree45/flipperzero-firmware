@@ -1,7 +1,7 @@
 #pragma once
 
 #include <lib/subghz/types.h>
-#include "subghz.h"
+#include "../../lib/subghz/subghz.h"  // Update the include path
 #include "views/receiver.h"
 #include "views/transmitter.h"
 #include "views/subghz_frequency_analyzer.h"
